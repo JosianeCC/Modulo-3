@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 5px 15px;
+            border: 1px solid gray;
+            empty-cells: hide;     /*remove celula vazia, só funciona com border collapse separete */   
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        tr, td, th {
+            border: 1px solid gray;
+            
+        }
+        th {
+            text-align: left;   
+        }
+        thead {
+            color:black;
+            background-color: lightgrey;
+                      
+        }
+       
+        caption{
+            caption-side: bottom;
+            font-size: 9pt;
+        }
+        #endereco {
+            text-align: center;
+        }
+        tfoot {
+            background-color: lightgrey;
+            font-size: 10pt;
+        }
+        tbody tr:nth-child(even) {
+            background-color:rgb(226, 240, 237);
+        } /*efeitozebra*/
+        tbody tr:nth-child(odd) {
+            background-color:lightcyan;
+        }
+        tbody tr:hover {
+            background-color:yellow;
+        }
+       
+    </style>
+</head>
+<body>
+    <table border="2">
+        <caption>Tabela 1 - Relação de clientes da JC Company </caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Nome</th>
+                <th rowspan="2">Telefone</th>
+                <th id="endereco" colspan="5">Endereço</th>
+            
+            </tr>
+            <tr>            
+                <th>Rua</th>
+                <th>Número</th>
+                <th>Cidade</th>
+                <th>Estado</th>
+                <th>CEP</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Ana Ferreira</td>
+                <td>+55 76 99999-4532</td>
+                <td>Av. Antonio Pereira</td>
+                <td></td>
+                <td>Grande</td>
+                <td>Pará</td>
+                <td>3670-0000</td>
+            </tr>
+            <tr>
+                <td>Fabio Linhares</td>
+                <td>+55 76 99999-4532</td>
+                <td>Av. Antonio Pereira</td>
+                <td>321</td>
+                <td>Grande</td>
+                <td>Pará</td>
+                <td>3670-0000</td>
+            </tr>
+        
+            <tr>
+                <td>Paula Costa</td>
+                <td>+55 76 99999-4532</td>
+                <td>Av. Antonio Pereira</td>
+                <td>321</td>
+                <td>Grande</td>
+                <td>Pará</td>
+                <td>3670-0000</td>
+            </tr>
+            <tr>
+                <td>Alice Silva</td>
+                <td>+55 76 99999-4532</td>
+                <td>Av. Antonio Pereira</td>
+                <td>321</td>
+                <td>Grande</td>
+                <td>Pará</td>
+                <td>3670-0000</td>
+            </tr>
+            <tr>
+                <td>Beto Ferreira</td>
+                <td>+55 76 99999-4532</td>
+                <td>Av. Antonio Pereira</td>
+                <td>321</td>
+                <td>Grande</td>
+                <td>Pará</td>
+                <td>3670-0000</td>
+            </tr>
+            <tr>
+                <td>Ana Ferreira</td>
+                <td>+55 76 99999-4532</td>
+                <td>Av. Antonio Pereira</td>
+                <td>321</td>
+                <td>Grande</td>
+                <td>Pará</td>
+                <td>3670-0000</td>
+            </tr>
+            <tr>
+                <td>Carlos Santos</td>
+                <td>+55 76 99999-4532</td>
+                <td>Av. Antonio Pereira</td>
+                <td>321</td>
+                <td>Grande</td>
+                <td>Pará</td>
+                <td>3670-0000</td>
+            </tr>
+            <tr>
+                <td>Ana Brito</td>
+                <td>+55 76 99999-4532</td>
+                <td>Av. Antonio Pereira</td>
+                <td>321</td>
+                <td>Grande</td>
+                <td>Pará</td>
+                <td>3670-0000</td>
+            </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="7">Para mais informações, entre em contato conoso.</td>
+        </tr>
+    </tfoot>
+    </table>
+    
+</body>
+</html>

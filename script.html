@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Web</title>
+
+
+    <script>
+        window.onload = function(){
+            document.getElementById("btnAlterar").addEventListener("click", function(){ var meuParagrafo =  document.getElementById("meuParagrafo")
+                meuParagrafo.innerHTML="Acabei de alterar o meu parágrfo..."
+
+            })
+
+        }
+    </script>
+</head>
+<body>
+    <h1>Minha Página HTML</h1>
+    <p id="meuParagrafo">Isso é um paragráfo</p>
+    <button id="btnAlterar">Alterar Paragráfo</button>
+
+</body>
+</html>
